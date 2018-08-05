@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-08-02 01:56:08.
+    * Generated on 2018-08-05 00:59:20.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -53,7 +53,7 @@ namespace PHPSTORM_META {
         'cache.store' => \Illuminate\Cache\Repository::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
-        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\LogBroadcaster::class,
+        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\PusherBroadcaster::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'command.cache.clear' => \Illuminate\Cache\Console\ClearCommand::class,
         'command.cache.forget' => \Illuminate\Cache\Console\ForgetCommand::class,
@@ -192,7 +192,7 @@ namespace PHPSTORM_META {
         'cache.store' => \Illuminate\Cache\Repository::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
-        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\LogBroadcaster::class,
+        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\PusherBroadcaster::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'command.cache.clear' => \Illuminate\Cache\Console\ClearCommand::class,
         'command.cache.forget' => \Illuminate\Cache\Console\ForgetCommand::class,
@@ -331,7 +331,7 @@ namespace PHPSTORM_META {
         'cache.store' => \Illuminate\Cache\Repository::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
-        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\LogBroadcaster::class,
+        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\PusherBroadcaster::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'command.cache.clear' => \Illuminate\Cache\Console\ClearCommand::class,
         'command.cache.forget' => \Illuminate\Cache\Console\ForgetCommand::class,
@@ -470,7 +470,7 @@ namespace PHPSTORM_META {
         'cache.store' => \Illuminate\Cache\Repository::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
-        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\LogBroadcaster::class,
+        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\PusherBroadcaster::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'command.cache.clear' => \Illuminate\Cache\Console\ClearCommand::class,
         'command.cache.forget' => \Illuminate\Cache\Console\ForgetCommand::class,
@@ -609,7 +609,7 @@ namespace PHPSTORM_META {
         'cache.store' => \Illuminate\Cache\Repository::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
-        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\LogBroadcaster::class,
+        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\PusherBroadcaster::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'command.cache.clear' => \Illuminate\Cache\Console\ClearCommand::class,
         'command.cache.forget' => \Illuminate\Cache\Console\ForgetCommand::class,
@@ -748,7 +748,7 @@ namespace PHPSTORM_META {
         'cache.store' => \Illuminate\Cache\Repository::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
-        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\LogBroadcaster::class,
+        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\PusherBroadcaster::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'command.cache.clear' => \Illuminate\Cache\Console\ClearCommand::class,
         'command.cache.forget' => \Illuminate\Cache\Console\ForgetCommand::class,
@@ -887,7 +887,7 @@ namespace PHPSTORM_META {
         'cache.store' => \Illuminate\Cache\Repository::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
-        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\LogBroadcaster::class,
+        'Illuminate\Contracts\Broadcasting\Broadcaster' => \Illuminate\Broadcasting\Broadcasters\PusherBroadcaster::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'command.cache.clear' => \Illuminate\Cache\Console\ClearCommand::class,
         'command.cache.forget' => \Illuminate\Cache\Console\ForgetCommand::class,
