@@ -6,9 +6,16 @@ use App\Post;
 use App\Traits\ApiJsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use App\PostLink;
 class PostController extends Controller
 {
     use ApiJsonResponse;
+    public static $list;
+public static $id=0;
+    public function __construct()
+    {
+        self::$list = new PostLink();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -18,6 +25,9 @@ class PostController extends Controller
     {
         try{
             $posts = Post::all();
+            $posts->each(function($post) {
+                $post['comments'] = $post->getThreadedComments();
+            });
             return response()->json($this->successResponse($posts,''));
         }catch(\Exception $exception){
             return response()->json($exception->getMessage());
@@ -40,17 +50,26 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+
         try{
             $validator = Validator::make($request->all(), [
                 'content' => 'required|max:65535'
             ]);
             if($validator->fails()){
                 return response()->json($this->errorResponse($validator->errors(),''));
-            }else{
+            }
+            else
+            {
+
                 $post = Post::create(['user_id' => $request->user()->id,'content' => $request->get('content')]);
+                $user_id=$request->user()->id;
+                $content=$request->get('content');
+                static::$list->addNode(static::$id,$user_id,$content);
+                static::$id=static::$id+1;
                 $post['comments'] = $post->getThreadedComments();
                 event(new StatusWasUpdated($post));
                 return response()->json($this->successResponse($post,''));
+
             }
         }catch(\Exception $exception){
             return response()->json($exception->getMessage());
@@ -62,6 +81,8 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
     public function show($id)
     {
         //

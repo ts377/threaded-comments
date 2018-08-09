@@ -53681,7 +53681,7 @@ var render = function() {
         [_vm._v("Reply")]
       ),
       _vm._v(" "),
-      _vm.replyToComment == _vm.comment
+      _vm.replyToComment === _vm.comment
         ? _c("comment-form", { attrs: { comment: _vm.comment } })
         : _vm._e(),
       _vm._v(" "),
