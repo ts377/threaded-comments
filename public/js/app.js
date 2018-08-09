@@ -53071,7 +53071,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "panel panel-default" }, [
     _c("div", { staticClass: "panel-heading" }, [
-      _vm._v("What's there in your mind?")
+      _vm._v("Please Post Your Thoughts Here!")
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "panel-body" }, [

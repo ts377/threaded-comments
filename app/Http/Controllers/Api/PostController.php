@@ -18,6 +18,9 @@ class PostController extends Controller
     {
         try{
             $posts = Post::all();
+            $posts->each(function($post) {
+                $post['comments'] = $post->getThreadedComments();
+            });
             return response()->json($this->successResponse($posts,''));
         }catch(\Exception $exception){
             return response()->json($exception->getMessage());
