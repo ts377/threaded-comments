@@ -1,6 +1,6 @@
 <template>
     <div class="panel panel-default">
-        <div class="panel-heading">Please Post Your Thoughts Here!</div>
+        <div class="panel-heading">Please Post Your Thoughts Here</div>
         <div class="panel-body">
             <div class="form-group" v-bind:class='[ errors.hasOwnProperty("content") ? "has-error" : "" ]'>
                 <textarea v-model="content" rows="3" class="form-control"></textarea>
